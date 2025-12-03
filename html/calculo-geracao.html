@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/geracaodiaria.js"defer></script>
+    <title>Energia fotovoltaica</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="nav" href="../index.html">Principal</a>
+            <a id="nav" href="./calculo-geracao.html">Geração</a>
+            <a id="nav" href="./placas-solares.html">Tipos</a>
+            <a id="nav" href="./historia.html">História</a>
+            <a id="nav" href="./estrutura.html">Estrutura</a>
+            <a id="nav" href="./projeto_solar.html">Projeto</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Geração solar</h1>
+        <img id="estrutura2" src="../img/geracao.jpg" alt="">
+        <h3>Região de Tijucas</h3><br>
+        <p>A região na qual a cidade de Tijucas está presente é uma região com pouca
+            radiação solar, devido a sua localização no globo, ela está localizada abaixo da
+            linha do equador, o que dificulta a chegada de raios solares, além disso a região
+            sul do brasil, mais especificamente o litoral catarinense, possui um clima úmido,
+            na qual aumenta o índice de chuvas, na qual diminui ainda mais a radiação solar
+            que chega nessa região. Tijucas tem uma média de 3,1 kWh/m²·</p><br>
+
+        <h3>Comparações a outras regiões</h3><br>
+        <p>Como dito anteriormente, a cidade de tijucas tem uma média de 3,1 kWh/m², o
+            que é pouco em relação à média brasileira, que é de 4,5 e 6,5 kWh/m², apesar de
+            ter uma média baixa para o brasil, em comparação ao continente europeu, Tijucas
+            é uma cidade com um ótimo padrão, já que países da Europa trabalham com 2,5 a
+            3,5 kWh/m². A maior média brasileira é da região Nordeste do brasil, que
+            apresenta os maiores índices de radiação</p><br><br>
+
+        <div>
+            <h3>Calcule sua geração de energia</h3>
+            <h4>Diária e mensal</h4>
+
+
+            <!-- exemplo de potência : 305W -->
+            <label for="potencia">Digite a potência da sua placa</label><br>
+            <input type="text" id="potencia"><br>
+
+            <!-- Radiação de tijucas 3.1 -->
+            <label for="radiacaoRegiao">Digite a radiação solar da sua região</label><br>
+            <input type="text" id="radiacaoRegiao"><br>
+
+            <label for="quantidadeProducaoMensal">Digite a quantidade que você deseja produzir mensalmente</label><br>
+            <input type="text" id="quantidadeProducaoMensal"><br>
+
+            <button onclick="principal()">Calcular</button>
+            <div id="resposta"></div><br>
+            
+
+            <small>O cálculo não considera ganhos ou perdas</small>
+
+        </div>
+    </main>
+    <footer>
+        By Carlos &copy;&trade;
+    </footer>
+</body>
+</html>
