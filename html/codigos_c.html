@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Energia fotovoltaica</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="nav" href="../index.html">Principal</a>
+            <a id="nav" href="./calculo-geracao.html">Geração</a>
+            <a id="nav" href="./placas-solares.html">Tipos</a>
+            <a id="nav" href="./historia.html">História</a>
+            <a id="nav" href="./estrutura.html">Estrutura</a>
+            <a id="nav" href="./projeto_solar.html">Projeto</a>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <br>
+        <h1>Códigos C++</h1>
+        <h3>Led</h3>
+        <small>
+// C++ code
+<br>
+//int analog = 0;
+<br>
+void setup()
+<br>
+{
+    <br>
+  pinMode(12, OUTPUT);
+  <br>
+  pinMode(10, OUTPUT);
+  <br>
+  pinMode(8, OUTPUT);
+  <br>
+  pinMode(A0, INPUT);
+  <br>
+  Serial.begin(9600);
+  <br>
+  digitalWrite(12, LOW);
+  <br>
+  digitalWrite(10, LOW);
+  <br>
+  digitalWrite(8, LOW);
+  <br>
+}
+<br><br>
+
+void loop()
+<br>
+{
+    <br>
+  analog = analogRead(A0);
+  <br>
+  digitalWrite(12, LOW);
+  <br>
+  digitalWrite(10, LOW);
+  <br>
+  digitalWrite(8, LOW);
+  <br>
+  if (analog >= 300) {
+    <br>
+    digitalWrite(12, HIGH);
+    <br>
+    digitalWrite(10, LOW);
+    <br>
+    digitalWrite(8, LOW);
+    <br>
+  } else {
+    <br>
+    digitalWrite(12, LOW);
+    <br>
+  }
+  <br>
+  if (analog >= 600) {
+    <br>
+    digitalWrite(10, HIGH);
+    <br>
+    digitalWrite(8, LOW);
+    <br>
+    digitalWrite(12, LOW);
+    <br>
+  } else {
+    <br>
+    digitalWrite(10, LOW);
+    <br>
+  }
+  <br>
+  if (analog >= 900) {
+    <br>
+    digitalWrite(8, HIGH);
+    <br>
+    digitalWrite(10, LOW);
+    <br>
+    digitalWrite(12, LOW);
+    <br>
+  } else {
+    <br>
+    digitalWrite(8, LOW);
+    <br>
+  }
+  <br>
+  Serial.println(analog);
+  <br>
+  delay(10); // Delay a little bit to improve simulation performance
+  <br>
+}
+</small>
+<br><br><br>
+<hr>
+<br><br><br>
+<h3>Display</h3>
+<br>
+<small>
+    <p>// C++ code<br>
+        int contador = 0;<br><br>
+        
+        void setup()
+        {<br>
+          pinMode(A0, INPUT);<br>
+          Serial.begin(9600);<br>
+          pinMode(2, OUTPUT);<br>
+          pinMode(3, OUTPUT);<br>
+          pinMode(4, OUTPUT);<br>
+          pinMode(5, OUTPUT);<br>
+          pinMode(6, OUTPUT);<br>
+          pinMode(7, OUTPUT);<br>
+          pinMode(8, OUTPUT);
+        }<br><br>
+        
+        void loop()
+        {<br>
+          Serial.println(analogRead(A0));<br>
+          if (analogRead(A0) &lt;= 100) {<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(3, LOW);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(8, HIGH);
+          }<br>
+          if (analogRead(A0) &gt;= 100 &amp;&amp; analogRead(A0) &lt;= 200) {<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(3, LOW);<br>
+            digitalWrite(4, HIGH);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(8, LOW);
+          }<br>
+          if (analogRead(A0) &gt;= 200 &amp;&amp; analogRead(A0) &lt;= 300) {<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(3, LOW);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(8, LOW);
+          }<br>
+          if (analogRead(A0) &gt;= 300 &amp;&amp; analogRead(A0) &lt;= 400) {<br>
+            digitalWrite(2, HIGH);<br>
+            digitalWrite(3, LOW);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(8, LOW);
+          }<br>
+          if (analogRead(A0) &gt;= 400 &amp;&amp; analogRead(A0) &lt;= 500) {<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(3, HIGH);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(8, LOW);
+          }<br>
+          if (analogRead(A0) &gt;= 500 &amp;&amp; analogRead(A0) &lt;= 600) {<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(3, HIGH);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(8, LOW);
+          }<br>
+          if (analogRead(A0) &gt;= 600 &amp;&amp; analogRead(A0) &lt;= 700) {<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(3, LOW);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(7, HIGH);<br>
+            digitalWrite(8, HIGH);
+          }<br>
+          if (analogRead(A0) &gt;= 700 &amp;&amp; analogRead(A0) &lt;= 800) {<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(3, LOW);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(5, LOW);<br>
+            digitalWrite(6, LOW);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(8, LOW);
+          }<br>
+          if (analogRead(A0) &gt;= 800 &amp;&amp; analogRead(A0) &lt;= 900) {<br>
+            digitalWrite(2, LOW);<br>
+            digitalWrite(3, LOW);<br>
+            digitalWrite(4, LOW);<br>
+            digitalWrite(5, HIGH);<br>
+            digitalWrite(6, HIGH);<br>
+            digitalWrite(7, LOW);<br>
+            digitalWrite(8, LOW);
+          }<br>
+          delay(10); // Delay a little bit to improve simulation performance
+        }
+                </p>
+</small>
+</small>
+    </main>
+    <br>
+    <footer>
+        By Carlos &copy;&trade;
+    </footer>
+</body>
+</html>

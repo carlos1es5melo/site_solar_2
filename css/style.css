@@ -26,7 +26,7 @@ a{
     font-size: 1.4rem;
 }
 
-@media(max-width:600px){
+@media(max-width:650px){
     a{
         text-decoration: none;
         color: white;
@@ -107,6 +107,77 @@ p{
     border: solid gray;
 }
 
+#arduinoIDE{
+    width: 250px;
+    height: 200px;
+    border-radius: 16px;
+    border: solid gray;
+}
+
+#ligacaoLED{
+    width: 580px;
+    height: 560px;
+    border-radius: 16px;
+    border: solid gray;
+}
+
+@media (max-width: 600px) {
+    #ligacaoLED{
+        width: 340px;
+        height: 320px;
+        border-radius: 16px;
+        border: solid gray;
+    }
+}
+
+.ligacaoFD{
+    width: 580px;
+    height: 500px;
+    border-radius: 16px;
+    border: solid gray;
+}
+
+@media (max-width: 600px){
+    .ligacaoFD{
+        width: 320px;
+        height: 280px;
+        border-radius: 16px;
+        border: solid gray;
+    }
+}
+
+
+.ligacaoFL{
+    width: 580px;
+    height: 560px;
+    border-radius: 16px;
+    border: solid gray;
+}
+
+@media (max-width: 600px){
+    .ligacaoFL{
+        width: 340px;
+        height: 320px;
+        border-radius: 16px;
+        border: solid gray;
+    }
+}
+
+.testeD{
+    width: 340px;
+    height: 550px;
+    border-radius: 16px;
+    border: solid gray;
+}
+
+.monitor{
+    width: 340px;
+    height: 300px;
+    border-radius: 16px;
+    border: solid gray;
+}
+
+
 button,input{
     color: white;
     font-size: 1.25rem;
@@ -122,6 +193,30 @@ button,input{
     text-align: center;
     background-color: gray;
     border-radius: 16px;
+}
+
+
+.video{
+    width: 560px;
+    height: 315px;
+    border-radius: 16px;
+    border: solid gray;
+}
+
+#potenciometro{
+    width: 320px;
+    height: 220px;
+    border-radius: 16px;
+    border: solid gray;
+}
+
+@media (max-width: 600px){
+    .video{
+        width: 340px;
+        height: 215px;
+        border-radius: 16px;
+        border: solid gray;
+    }
 }
 
 

@@ -23,18 +23,43 @@
         <h1>Projeto Solar</h1><br>
         <img id="senai" src="../img/senai-logo-5.png" alt="">
         <p>Nessa aba iremos falar alguns conceitos sobre o projeto solar sendo feito pela turma de Cibersitemas para automação</p>
-        <h3>Conceitos</h3>
+        <h2>Conceitos</h2>
+        <br>
+        <hr>
+        <br>
         <h4>Entrada e saída digital</h4>
-        <p>As entradas e saidas são definidas por sinais, que assumem 2 estados, que seria ligado e desligado, geralmente utlizando sinais binários (1 e 2), físico com sensores que medem sinais baixos e altos, geralmente em volts (0V e 5V por exemplo)</p>
+        <p>As entradas e saidas são definidas por sinais, que assumem 2 estados, que seria ligado e desligado, geralmente utlizando sinais binários (1 e 2), físico com sensores que medem sinais baixos e altos, e em volts (0V e 5V)</p>
         
         <h4>Entrada e saída analógica </h4>
-        <p>Um sinal analógico assume diversos valores, sendo utilizado por exemplo para medir unidades como temperatura, quantidade (geralmente em porcentagem), e coisas do tipo</p>
+        <p>Um sinal analógico assume diversos valores, sendo utilizado por exemplo para medir unidades como temperatura, quantidade (em porcentagem).</p>
+        <br>
+        <hr>
+        <br>
         <h4>Microcontroladores</h4><br>
         <img id="microcontrolador"   src="../img/microcontrolador.jpg" alt="">
         <p>Os microcontroladores são pequenos computadores utilizados para executarem tarefas, executadas por programas que recebem dados de sensores. Ele é um sistema completo em um único chip, com CPU e memória para executar o controle de sistemas expecíficos</p>
+        <br>
+        <hr>
+        <br>
         <h4>Arduíno</h4>
         <br>
         <img id="arduino" src="../img/arduino.webp" alt="">
+        <br>
+        <br>
+        <h5>Modelo e fabricante</h5>
+        <br>
+        <p>O modelo que utilizamos é o Arduino Uno, modelo utilizado pra criação de projetos abertos, muito conhecido por ser ideal para iniciantes. O microntrolador desse arduino é produzido pela Atmega, com o ATmega328P ( modelo do microcontrolador )</p>
+        <br>
+        <h5>Programação</h5>
+        <br>
+        <img id="arduinoIDE" src="../img/IDE_arduino.jpg" alt="">
+        <br>
+        <p>O arduino é programado com base na linguagem C ou C++, utilizando o Arduino IDE para escrever e aplicar o código. Sendo estruturados em 2 funções principais, void setup(), void loop(), que iniciam e repetem o que é pedido</p>
+        <br>
+        <h5>Entradas e saídas</h5>
+        <br>
+        <p>O arduino conta com 2 tipos de saídas, analógica e digital, as saídas analógicas são consideradas em valores de 0 a 100, em porcentagem, enquanto as entradas digitais tem valores binários, também definidos em volts, sendo 1 igual a 5 Volts e 0 igual a 0 Volts ( Ou valores menores mas não nulos, assim como 0,1 )</p>
+        <br>
         <!-- qual o microcontrolador do arduíno: modelo e fabricante
         qual a linguagem de programação do arduíno
         onde o arduíno é programado (IDE)
@@ -42,6 +67,13 @@
         qual o valor da entrada digital em volts no arduino
         qual o valor da saída digital em volts no arduino -->
         <h4>Multímetro</h4>
+        <br>
+        <h5>O que é</h5>
+        <p>O multimetro é um aparelho que serve para medir grandezas elétricas, como a resistência, tensão e corrente, é uma ferramente essencial para técnicos que precisam saber desses valores, já que faz a função de 3 aparelhos em 1 só.</p>
+        <h5>Escala</h5>
+        <p>As escalas do multimetro são conjuntos que se ajustam para medir diferentes grandezas elétricas, como a tensão, a corrente e a resistência, onde cada uma possui sub escalas.</p>
+        <h5>Medições e testes</h5>
+        <p>Os testes de um multimetro se baseiam na lei de OHM, que é <strong>V = I x R</strong>(Tensão é igual a corrente vezes a resistência), para realizar uma medição no multímetro é necessário conectar os cabos no multimetro, selecionar a escala na qual você deseja medir e então tocar as pontas para realizar a medição.</p>
         <!-- quais as grandezas que ele consegue medir
         o que é escala de medição
         qual a lei que o multímetro aplica para realizar as medidas
@@ -49,6 +81,112 @@
         como é a medição de uma resistência no resistor
         como é a medição de uma tensão no circuito com resistor e led
         como é a medição de uma corrente elétrica no circuito -->
+        <br>
+        <hr>
+        <br>
+        <h1>Projeto solar</h1>
+        <br>
+        <hr>
+        <br>
+        <h3>Ligação eletrônica</h3>
+        <br>
+        <img id="ligacaoLED" src="../img/ligacao_eletronica_led.png" alt="">
+        <br>
+        <small>Ligação do arduino para o LED</small>
+        <br>
+        <br>
+        <img id="ligacaoLED" src="../img/ligacao_led_display.png" alt="">
+        <small>Ligação do arduino para o display de 7 segmentos</small>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h3>Ligação física</h3>
+        <br>
+        <img class="ligacaoFL" src="../img/ligacao_fisica_led.png" alt="">
+        <small>Ligação física do led</small>
+        <br>
+        <br>
+        <img class="ligacaoFD" src="../img/ligacao_fisica_display.png" alt="">
+        <small>Ligação física do display de 7 segmentos</small>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h1>Códigos C++</h1>
+        <br>
+        <small>Clique aqui para ver os códigos</small>
+        <br>
+        <a href="./codigos_c.html">Códigos</a>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h3>Vídeos das ligações físicas</h3>
+        <br>
+        <br>
+        <iframe class="video" src="https://www.youtube.com/embed/3g3CQmLstE4?si=ukB1u8jIZ11hK7Hm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <small>Video display de 7 segmentos</small>
+        <br><br>
+        <iframe  src="https://www.youtube.com/embed/PAGpUXYcQbE?si=WkZNACGZh8r7sOvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <small>Video led</small>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h3>Resistência 10k de Ohms</h3>
+        <br>
+        <img id="potenciometro" src="../img/10k.webp" alt="">
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h3>Teste do display</h3>
+        <br>
+        <br>
+        <img class="testeD" src="../img/teste_display_1.webp" alt="">
+        <br>
+        <br>
+        <img class="testeD" src="../img/teste_display_2.webp" alt="">
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h3>Medidas no monitor</h3>
+        <br>
+        <br>
+        <p>Potênciometro em 700</p>
+        <br>
+        <img class="monitor" src="../img/monitor_700.webp" alt="">
+        <br>
+        <p>Potênciometro em 300</p>
+        <br>
+        <img class="monitor" src="../img/monitor_300.webp" alt="">
+        <br>
+        <br>
+        <iframe class="video" src="https://www.youtube.com/embed/PAGpUXYcQbE?si=WkZNACGZh8r7sOvq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h3>Monitoramento em gráficos</h3>
+        <br>
+        <br>
+        <img class="video" src="../img/print_grafico.webp" alt="">
+        <br>
+        <small>Print</small>
+        <br>
+        <br>
+        <iframe class="video" src="https://www.youtube.com/embed/5t4eZbkIWFQ?si=ZVppHvLtiNZrifH6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <small>Vídeo</small>
+    
+        
+
     </main>
     <br>
     <footer>
