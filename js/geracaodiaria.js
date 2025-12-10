@@ -1,5 +1,5 @@
 
-/* let resposta = document.getElementById('resposta') */
+let resposta = document.getElementById('resposta')
 
 function principal(){
     
